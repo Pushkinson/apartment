@@ -1,0 +1,113 @@
+.apartment
+  background-color: $background-color-grey
+
+  &__wrapper
+    justify-content: space-around
+    align-items: center
+
+  &__component
+    width: 1200px
+    justify-content: space-between
+    background-color: #fff
+    margin: 40px
+    border-radius: 8px
+    box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.04)
+    position: relative
+
+  &__image
+    margin: 24px
+
+  &__icon
+    width: 178px
+    height: 178px
+
+  &__content
+    justify-content: flex-start
+    align-items: flex-start
+    margin: 24px 8px
+
+  &__name
+    font-family: 'Roboto-Bold'
+    color: $color-darkgrey
+    font-size: 1.72em
+
+  &__info
+    margin: 8px 0 18px
+    h3
+      font-family: 'Roboto-Regular'
+      font-weight: 400
+      color: $color-grey
+      line-height: 16px
+      font-size: 0.86em
+    p
+      font-family: 'Roboto-Medium'
+      font-weight: 500
+      color: $color-darkgrey
+      line-height: 20px
+      font-size: 1em
+    &-group1
+      margin-bottom: 12px
+    &-item
+      min-width: 140px
+
+  &__additionally
+    justify-content: flex-start
+    align-items: flex-start
+    p
+        font-size: 0.86em
+        font-family: 'Roboto-Medium'
+    &-watch
+      justify-content: space-around
+      align-items: center
+      background-color: $background-color-lightgreen
+      border-radius: 22px
+      padding: 8px 16px
+      margin-right: 16px
+    &-bank
+      justify-content: space-around
+      align-items: center
+      background-color: $background-color-lightred
+      border-radius: 22px
+      padding: 8px 16px
+
+  &__price
+    min-width: 300px
+    justify-content: stretch
+    margin: 24px 32px 24px 0
+    padding: 0 0 0 31px
+    border-left: 1px solid #F0EEEB
+    font-family: 'Roboto-Regular'
+    font-weight: 400
+    color: $color-grey
+    line-height: 20px
+    font-size: 1em
+    span
+        font-family: 'Roboto-Medium'
+    &-value
+      font-family: 'Roboto-Bold'
+      color: $color-darkgrey
+      font-size: 1.72em
+      margin: 10px 0 15px
+    &-button
+      margin: 22px 0 0 0
+
+  &__close
+    width: 24px
+    height: 24px
+    justify-content: space-around
+    align-items: center
+    border-radius: 4px
+    cursor: pointer
+    position: absolute
+    top: 16px
+    right: 16px
+    &-icon
+      fill: #B2B0AB
+      width: 14px
+      height: 14px
+    &:hover
+      background-color: #F5F4F2
+    &:hover > .apartment__close-icon
+      fill: #000
+    &:active
+      background-color: #E7E4DE

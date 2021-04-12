@@ -4,9 +4,92 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Appartment</title>
+  <title>Apartment</title>
+  <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 <body>
-  
+  <section class="apartment">
+    <div class="row apartment__wrapper">
+      <div class="row apartment__component">
+        <div class="apartment__image">
+          <svg class="apartment__icon">
+            <use xlink:href="./assets/img/sprite.svg#apartment-image"></use>
+          </svg>
+        </div>
+        <div class="column apartment__content">
+          <h1 class="apartment__name">2-к квартира</h1> <!--Студия?-->
+          <div class="column apartment__info">
+            <div class="row apartment__info-group1">
+              <div class="column apartment__info-item apartment__info-floor">
+                <h3>Этаж</h3>
+                <p>3 из 19</p>
+              </div>
+              <div class="column apartment__info-item apartment__info-ceiling">
+                <h3>Высота потолков</h3>
+                <p>3 из 19</p>
+              </div>
+              <div class="column apartment__info-item apartment__info-furnish">
+                <h3>Отделка</h3>
+                <p>Предчистовая</p>
+              </div>
+            </div>
+            <div class="row apartment__info-group2">
+              <div class="column apartment__info-item apartment__info-area">
+                <h3>Общая площадь</h3>
+                <p>32,24 м²</p>
+              </div>
+              <div class="column apartment__info-item apartment__info-houseroom">
+                <h3>Жилая площадь</h3>
+                <p>22,24 м²</p>
+              </div>
+              <div class="column apartment__info-item apartment__info-kitchen">
+                <h3>Площадь кухни</h3>
+                <p>14,24 м²</p>
+              </div>
+            </div>
+          </div>
+          <div class="row apartment__additionally">
+            <div class="row apartment__additionally-watch">
+              <svg class="check-icon">
+                <use xlink:href="./assets/img/sprite.svg#check-icon"></use>
+              </svg>
+              <p class="text-green">Вы были на просмотре</p>
+            </div>
+            <div class="row apartment__additionally-bank">
+              <svg class="cross-icon">
+                <use xlink:href="./assets/img/sprite.svg#cross-icon-red"></use>
+              </svg>
+              <p class="text-red">Дом аккредитован другим банком</p>
+            </div>
+          </div>
+        </div>
+        <div class="column apartment__price">
+          <p class="apartment__price-reserv">Ваша цена по брони до <span class="text-blue">19 сентября</span></p>
+          <p class="apartment__price-value">3 312 666 Р</p>
+          <p class="apartment__price-developer">Текущая цена у застройщика </br>дороже на <span  class="text-red">324 825 Р</span></p>
+          <div class="row button apartment__price-button">
+            <a class="row" href="#">
+              <svg class="button__icon">
+                <use xlink:href="./assets/img/sprite.svg#key-icon"></use>
+              </svg>
+              <span class="button__span">Выбрать для покупки</span>
+            </a>
+          </div>
+        </div>
+        <div class="row apartment__close">
+          <svg class="apartment__close-icon" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.7951 0.307991C1.38445
+              -0.102664 0.718644 -0.102664 0.30799 0.307991C-0.102664 0.718645 -0.102663
+              1.38445 0.307991 1.7951L5.51291 7.00002L0.30804 12.2049C-0.102614 12.6156
+              -0.102614 13.2814 0.30804 13.692C0.718694 14.1027 1.3845 14.1027 1.79515
+              13.692L7.00002 8.48714L12.2049 13.692C12.6155 14.1026 13.2813 14.1026 13.692
+              13.692C14.1026 13.2813 14.1026 12.6155 13.692 12.2049L8.48713 7.00002L13.692
+              1.79512C14.1027 1.38446 14.1027 0.71866 13.692 0.308005C13.2814 -0.102649
+              12.6156 -0.102649 12.2049 0.308005L7.00002 5.51291L1.7951 0.307991Z"/>
+            </svg>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
